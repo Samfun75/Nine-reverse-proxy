@@ -1,0 +1,19 @@
+name = "9anime"
+main = "src/index.ts"
+compatibility_date = "2023-03-13"
+usage_model = "bundled"
+env = { }
+
+[triggers]
+crons = [ ]
+
+# The necessary secrets are:
+# - RESOLVER_HOST
+# - API_KEY
+#
+# Create secret.json with content `{"RESOLVER_HOST": "subdomain.domain.com", "API_KEY": "key123"}`
+# Run `wrangler secret:bulk secret.json`
+#
+# For local testing create .dev.vars with below content
+# RESOLVER_HOST=subdomain.domain.com
+# API_KEY=key123
